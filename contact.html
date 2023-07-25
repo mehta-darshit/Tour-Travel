@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          margin-top: 100px;
+          padding: 20px;
+        }
+        
+        h1 {
+          text-align: center;
+        }
+        
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        
+        .contact-form label {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
+        
+        .contact-form textarea {
+          resize: vertical;
+          height: 100px;
+        }
+        
+        .contact-form button {
+          padding: 10px 20px;
+          background-color: #1d0c72;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+          background-color: #1f2490;
+        }
+      </style>
+</head>
+
+<body>
+    <header class="flex-box">
+        <div class="header-left flex-box">
+          <a href="#" class="header__logo">
+            <img src="images/logo.png" alt="Logo">
+          </a></div>
+          <div class="header-right">
+          <ul class="hide-mobile header-navbar flex-box">
+            <li class="navbar__item"><a href="./index.html" class="navbar-link">HOME</a></li>
+            <li class="navbar__item"><a href="" class="navbar-link">TOURS</a></li>
+            <li class="navbar__item"><a href="" class="navbar-link">HOTELS</a></li>
+            <li class="navbar__item"><a href="./Darshit.html" class="navbar-link">ABOUT US</a></li>
+            <li class="navbar__item"><a href="./contact.html" class="navbar-link">CONTACT US</a></li>
+            <li class="navbar__item"><a href="" class="nav-btn navbar__btn1 navbar-link">SIGN UP</a></li>
+            <li class="navbar__item"><a href="" class="nav-btn navbar__btn1 navbar-link">LOGIN</a></li>
+          </ul>
+      
+        </div>
+      </header>
+    <div class="container">
+        <h1 style="color: #1f2490;">Contact Us</h1>
+        <form class="contact-form" action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    
+</body>
+</html>
